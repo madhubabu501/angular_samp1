@@ -1,70 +1,37 @@
-.page {
+.login-comp {
     background-color: azure;
+    padding-top: 100px;
 }
 
-.fblogo {
+.fb-logo {
     color: rgb(30, 30, 240);
     font-size: 50px;
-    margin-top: 0px;
     padding-top: 30px;
 }
 
-.para {
+.fb-desc {
     font-size: 30px;
 }
 
-.box {
-    text-align: center;
-    border: 2px solid black;
-    border-radius: 18px;
-    padding-top: 5px;
-    padding-left: 30px;
-    padding-right: 0px;
-    margin-top: 10px;
-    margin-left: 40px;
-    margin-right: 40px;
-    height: 400px;
-    width: 400px;
+.login-box {
     background-color: white;
-}
-
-.bt_n {
-    text-align: center;
-    color: aliceblue;
-    background-color: rgb(100, 100, 219);
-    width: 200px;
-    height: 50px;
+    padding: 20px;
+    border: 2px solid black;
     border-radius: 8px;
-    margin-left: 0px;
-    margin-right: 30px;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin: 30px 50px 10px 15px;
 }
 
-.btnn {
+input {
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.login-btn {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.signup-btn {
     text-align: center;
-    color: aliceblue;
-    background-color: rgb(106, 238, 102);
-    width: 180px;
-    height: 50px;
-    border-radius: 8px;
-    margin-left: 0px;
-    margin-right: 30px;
-}
-
-.in_put {
-    margin-top: 20px;
-    text-align: center;
-    width: 330px;
-    padding-top: 40px;
-    margin: 8px 0;
-    border-radius: 18px;
-}
-
-.in1 {
-    margin-bottom: 10px;
-}
-
-.in2 {
-    margin-top: 20px;
+    margin-top: 15px;
 }

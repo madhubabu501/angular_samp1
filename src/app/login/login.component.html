@@ -1,24 +1,23 @@
-<div class="page">
+<div class="login-comp">
     <div class="container">
         <div class="row">
             <div class="col-6">
-                <h1 class="fblogo">Facebook</h1>
-                <p class="para">Facebook helps you connect and share with the people in your life.</p>
+                <h1 class="fb-logo">Facebook</h1>
+                <p class="fb-desc">Facebook helps you connect and share with the people in your life.</p>
             </div>
-            <form class="col-6" [formGroup]="loginform">
-                <div class="box">
-                    <div class="in_put">
-                        <div class="in1">
-                            <input formControlName="username" type="text" placeholder="Email/userName">
-                        </div>
-                        <div class="in2">
-                            <input formControlName="password" type="text" placeholder="Password">
-                        </div>
+            <div class="col-6">
+                <div class="login-box">
+                    <form [formGroup]="loginform">
+                        <input formControlName="username" type="text" placeholder="Email/userName">
+                        <input formControlName="password" type="text" placeholder="Password">
+                        <button class="btn btn-primary login-btn" (click)="login()">Login</button>
+                    </form>
+                    <hr />
+                    <div class="signup-btn">
+                        <button class="btn btn-success">Create New Account</button>
                     </div>
-                    <button class="bt_n" (click)="login()">Login</button>
-                    <button class="btnn">Create New Account</button>
                 </div>
-            </form>
+            </div>
         </div>
     </div>
 </div>
