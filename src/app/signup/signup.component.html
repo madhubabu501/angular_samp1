@@ -15,16 +15,16 @@
             <div>
                 <div>Date of birth ?</div>
                 <div>
-                    <select class="day-div" value="full-dob" formControlName="dob_day">
-                        <option>select</option>
+                    <select class="day-div" formControlName="dob_day">
+                        <option [disabled]="signupForm.controls['dob_day'].dirty">select</option>
                         <option *ngFor="let number of quantities">{{number}}</option>
                     </select>
-                    <select class="month-div" value="full-dob" formControlName="dob_month">
-                        <option>select</option>
+                    <select class="month-div" formControlName="dob_month">
+                        <option [disabled]="signupForm.controls['dob_month'].dirty">select</option>
                         <option *ngFor="let month of monthArray">{{month}}</option>
                     </select>
-                    <select class="year-div" value="full-dob" formControlName="dob_year">
-                        <option>select</option>
+                    <select class="year-div" formControlName="dob_year">
+                        <option [disabled]="signupForm.controls['dob_year'].dirty">select</option>
                         <option *ngFor="let year of yearArray">{{year}}</option>
                     </select>
                 </div>
