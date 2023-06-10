@@ -1,0 +1,90 @@
+.signup-comp {
+    background-color: rgb(226, 221, 221);
+    height: 100vh;
+}
+
+.fb-name {
+    text-align: center;
+    font-size: 50px;
+    color: blue;
+}
+
+.data-box {
+    background-color: white;
+    padding: 15px;
+    border: 2px;
+    border-radius: 5px;
+}
+
+.p1 {
+    font-size: 20px;
+}
+
+.p1,
+.p2 {
+    text-align: center;
+}
+
+.first-name,
+.last-name {
+    display: inline-block;
+    width: 49%;
+}
+
+.first-name {
+    margin-right: 2%;
+}
+
+.phone-email,
+.pwd-div {
+    width: 100%;
+}
+
+.first-name,
+.last-name,
+.phone-email,
+.pwd-div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.day-div,
+.month-div,
+.year-div,
+.gender-female,
+.gender-male,
+.gender-custom {
+    width: 32%;
+    padding: 2px 5px 2px 2px;
+    margin-top: 3px;
+    margin-bottom: 8px;
+}
+
+.day-div,
+.month-div,
+.gender-female,
+.gender-male {
+    margin-right: 2%;
+}
+
+.gender-female,
+.gender-male,
+.gender-custom {
+    display: inline-flex;
+    border: 1px solid black;
+}
+
+.input-female,
+.input-male,
+.input-custom {
+    margin-left: auto;
+}
+
+.signup-button {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.btn-success{
+    width: 50%;
+}

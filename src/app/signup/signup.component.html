@@ -1,0 +1,56 @@
+<div class="container-fluid signup-comp">
+    <div class="fb-name">
+        Facebook
+    </div>
+    <div class="row">
+        <div class="col-sm"></div>
+        <form class="col-sm-6 col-md-5 col-lg-4 data-box" [formGroup]="signupForm" (ngSubmit)="signup()">
+            <div class="p1">Create a new account</div>
+            <div class="p2">It's fast and quick</div>
+            <hr>
+            <input formControlName="firstname" type="text" class="first-name" placeholder="Firstname">
+            <input formControlName="lastname" type="text" class="last-name" placeholder="Lastname">
+            <input formControlName="mobilenumber" type="text" class="phone-email" placeholder="Mobile no/Email address">
+            <input formControlName="password" type="text" class="pwd-div" placeholder="Password">
+            <div>
+                <div>Date of birth ?</div>
+                <div>
+                    <select class="day-div" value="full-dob" formControlName="dob_day">
+                        <option>select</option>
+                        <option *ngFor="let number of quantities">{{number}}</option>
+                    </select>
+                    <select class="month-div" value="full-dob" formControlName="dob_month">
+                        <option>select</option>
+                        <option *ngFor="let month of monthArray">{{month}}</option>
+                    </select>
+                    <select class="year-div" value="full-dob" formControlName="dob_year">
+                        <option>select</option>
+                        <option *ngFor="let year of yearArray">{{year}}</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <div>Gender ?</div>
+                <div>
+                    <div class="gender-female">
+                        <label>Female</label>
+                        <input class="input-female" type="radio" value="female" formControlName="gender">
+                    </div>
+                    <div class="gender-male">
+                        <label>Male</label>
+                        <input class="input-male" type="radio" value="male" formControlName="gender">
+                    </div>
+                    <div class="gender-custom">
+                        <label>Custom</label>
+                        <input class="input-custom" type="radio" value="custom" formControlName="gender">
+                    </div>
+                </div>
+            </div>
+            <div class="signup-button">
+                <button class="btn btn-success" type="submit" [disabled]="signupForm.invalid">Sign Up</button>
+            </div>
+        </form>
+        <div class="col-sm"></div>
+    </div>
+
+</div>
