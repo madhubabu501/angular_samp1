@@ -6,7 +6,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
-  quantities: Array<number> = [];
+  dayArray: Array<number> = [];
   monthArray: Array<string> = ["Jan", "Feb", "Mar", "Apr", "may", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
   yearArray: Array<number> = [];
   signupForm!: FormGroup;
@@ -22,12 +22,12 @@ export class SignupComponent implements OnInit {
       dob_month: ['', Validators.required],
       dob_year: ['', Validators.required]
     })
-    this.getQuantity();
+    this.getday();
     this.getYear();
   }
-  getQuantity() {
+  getday() {
     for (let i = 1; i <= 31; i++) {
-      this.quantities.push(i);
+      this.dayArray.push(i);
     }
   }
   getYear() {

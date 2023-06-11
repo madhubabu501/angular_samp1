@@ -1,0 +1,32 @@
+.container-fluid {
+    background-color: lightgray;
+    margin-top: 50px;
+}
+
+.forgot-box {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 15px;
+    border: 2px solid whitesmoke;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.head-quote {
+    font-size: x-large;
+
+}
+
+.email-mobile {
+    width: 100%;
+}
+
+.buttons {
+    text-align: end;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: end; */
+}
+.btn-light{
+    margin-right: 10px;
+}

@@ -17,7 +17,7 @@
                 <div>
                     <select class="day-div" formControlName="dob_day">
                         <option [disabled]="signupForm.controls['dob_day'].dirty">select</option>
-                        <option *ngFor="let number of quantities">{{number}}</option>
+                        <option *ngFor="let number of dayArray">{{number}}</option>
                     </select>
                     <select class="month-div" formControlName="dob_month">
                         <option [disabled]="signupForm.controls['dob_month'].dirty">select</option>

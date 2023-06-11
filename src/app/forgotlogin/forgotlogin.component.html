@@ -1,0 +1,21 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-5">
+            <div class="forgot-box">
+                <div class="head-quote">Find your account</div>
+                <hr>
+                <div>Please enter your email address or mobile number to search for your account.</div>
+                <div [formGroup]="forgotForm">
+                    <input formControlName="email_mobile" class="email-mobile" type="text" placeholder="Email address or Mobile number">
+                </div>
+                <hr>
+                <div class="buttons">
+                    <button routerLink = "/login" class="btn btn-light">cancel</button>
+                    <button (click)="searchmember()" class="btn btn-primary">search</button>
+                </div>
+            </div>
+        </div>
+        <div class="col"></div>
+    </div>
+</div>
