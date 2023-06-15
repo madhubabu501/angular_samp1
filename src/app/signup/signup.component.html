@@ -19,7 +19,7 @@
                         <option [disabled]="signupForm.controls['dob_day'].dirty">select</option>
                         <option *ngFor="let number of dayArray">{{number}}</option>
                     </select>
-                    <select class="month-div" formControlName="dob_month">
+                    <select class="month-div" formControlName="dob_month" (change)="monthChange()">
                         <option [disabled]="signupForm.controls['dob_month'].dirty">select</option>
                         <option *ngFor="let month of monthArray">{{month}}</option>
                     </select>
