@@ -51,11 +51,27 @@ export class SignupComponent implements OnInit {
       for (let i = 1; i <= 28; i++) {
         this.dayArray.push(i);
       }
+      if (this.signupForm.controls['dob_year'].value && (this.signupForm.controls['dob_year'].value % 4 == 0)) {
+        this.dayArray.push(29);
+      }
     } else if (this.signupForm.controls['dob_month'].value == this.monthArray[3] || this.signupForm.controls['dob_month'].value == this.monthArray[5]
       || this.signupForm.controls['dob_month'].value == this.monthArray[8] || this.signupForm.controls['dob_month'].value == this.monthArray[10]) {
       this.dayArray = [];
       for (let i = 1; i <= 30; i++) {
         this.dayArray.push(i);
+      }
+    }
+  }
+  onChangeYear() {
+    if (this.signupForm.controls['dob_month'].value == this.monthArray[1]) {
+      if (this.signupForm.controls['dob_year'].value % 4 == 0) {
+        if (this.dayArray.length == 28) {
+          this.dayArray.push(29);
+        }
+      } else {
+        if (this.dayArray.length == 29) {
+          this.dayArray.pop();
+        }
       }
     }
   }

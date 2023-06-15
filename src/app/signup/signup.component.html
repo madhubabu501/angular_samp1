@@ -23,7 +23,7 @@
                         <option [disabled]="signupForm.controls['dob_month'].dirty">select</option>
                         <option *ngFor="let month of monthArray">{{month}}</option>
                     </select>
-                    <select class="year-div" formControlName="dob_year">
+                    <select class="year-div" formControlName="dob_year" (change)="onChangeYear()">
                         <option [disabled]="signupForm.controls['dob_year'].dirty">select</option>
                         <option *ngFor="let year of yearArray">{{year}}</option>
                     </select>
